@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Valentine</title>
+<style>
+body{
+font-family: Arial;
+text-align:center;
+background:#ffe6f0;
+margin-top:100px;
+}
+button{
+padding:15px 25px;
+font-size:18px;
+margin:10px;
+border:none;
+border-radius:10px;
+cursor:pointer;
+}
+#yes{ background:#ff4d6d; color:white;}
+#no{ background:#ccc;}
+#final{ display:none; margin-top:40px; font-size:20px;}
+</style>
+</head>
+<body>
+
+<h1>¿Quieres ser mi Valentine?</h1>
+
+<button id="yes">Sí</button>
+<button id="no">No</button>
+
+<div id="final">
+<h2>¡Gracias por aceptar!</h2>
+<p>Menos mal que aceptó, señor… si no, le caía 😉</p>
+<p>A pesar de no poder vernos estos días, gracias por estar siempre para mí.</p>
+<p>Ya deseo verlo pronto para que recuperemos el tiempo perdido y nos perdamos en nuestro mundo.</p>
+<p><b>Al final, me debes muchos besitos… y algo más 😉</b></p>
+</div>
+
+<script>
+document.getElementById("yes").onclick = function(){
+document.getElementById("final").style.display = "block";
+};
+document.getElementById("no").onclick = function(){
+alert("Respuesta incorrecta 😄");
+};
+</script>
+
+</body>
+</html>
